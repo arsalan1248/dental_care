@@ -54,10 +54,5 @@ class DentalProfileView(viewsets.ModelViewSet):
 	permission_classes = (permissions.IsAuthenticated,)
 	authentication_classes = (SessionAuthentication,)
 	serializer_class = DentalProfileSerializer
-	action_serializers = {
-        "retrieve": DentalProfileSerializer,
-        "dafault": DentalProfileSerializer,
-        "update": DentalProfileSerializer,
-    }
 	queryset = DentalProfile.objects.all()
     
