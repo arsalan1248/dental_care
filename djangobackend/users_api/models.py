@@ -40,7 +40,7 @@ class AppUser(AbstractUser, PermissionsMixin):
 	
 
 class DentalProfile(models.Model):
-	user = models.ForeignKey(AppUser, on_delete=models.CASCADE)
+	user = models.ForeignKey(AppUser, on_delete=models.CASCADE, related_name="dental_profiles")
 	test_kit_id = models.CharField(max_length=32)
 	title = models.CharField(max_length=128)
 	description = models.TextField(null=True, blank=True)

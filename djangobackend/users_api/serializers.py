@@ -32,7 +32,7 @@ class DentalProfileSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class UserSerializer(serializers.ModelSerializer):
-	dental_profiles = DentalProfileSerializer(many=True, read_only=True)
+	dental_profiles = DentalProfileSerializer(many=True)
 	
 	class Meta:
 		model = UserModel
