@@ -1,0 +1,3 @@
+[submodule "common-backend"]
+	path = common-backend
+	url = git@github.com:arsalan1248/backend_django.git
